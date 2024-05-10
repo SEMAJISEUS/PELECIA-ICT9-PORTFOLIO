@@ -1,0 +1,178 @@
+.qq, .qw {
+    text-align: center;
+    font-size: 40px;
+    animation: textChange 3s infinite;
+}
+
+.A, .B, .C, .D {
+    text-align: center;
+    font-size: 100px;
+}
+
+.A { color: red; }
+.B { color: yellow; }
+.C { color: green; }
+.D { color: blue; }
+
+@keyframes textChange {
+    0% { color: red; }
+    33.33% { color: yellow; }
+    66.67% { color: green; }
+    100% { color: red; }
+}
+
+.p {
+    font-size: 16px;
+    box-shadow: 5px 5px 5px 5px rgb(75, 75, 75);
+}
+
+.officers {
+    float: left;
+    width: 800px;
+    height: 50%;
+}
+
+.par {
+    text-align: justify;
+    font-size: 40px;
+    color: rgb(140, 255, 0);
+    padding-left: 2%;
+}
+
+.colorful-hr {
+    border: none;
+    height: 10px;
+    background: linear-gradient(to right, red 33.33%, yellow 33.33%, yellow 66.67%, green 66.67%, green 100%), 
+                linear-gradient(to right, red 33.33%, yellow 33.33%, yellow 66.67%, green 66.67%, green 100%), 
+                linear-gradient(to right, red 33.33%, yellow 33.33%, yellow 66.67%, green 66.67%, green 100%); 
+    background-size: 300% 100%; 
+    animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+    0% { background-position: 0 0; }
+    100% { background-position: -900% 0; }
+}
+
+.background-change {
+    animation: backgroundChange 5s infinite;
+}
+
+.textchange {
+    font-size: 24px;
+    animation: colorChange 0.5s infinite alternate;
+    color: #fff;
+}
+
+@keyframes colorChange {
+    0% { color: #ff7675; }
+    25% { color: #55efc4; }
+    50% { color: #fdcb6e; }
+    75% { color: #74b9ff; }
+    100% { color: #ff7675; }
+}
+
+.text-container {
+    display: inline-block;
+    width: calc(100% - 540px);
+    vertical-align: top;
+}
+
+.video-container {
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+.container {
+    margin-bottom: 20px; /* Add margin to create space between container and hr */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center items */
+}
+
+.Lendric, .vpop, .folkdance {
+    width: 400px;
+    height: 50%;
+    margin-right: 20px; /* Add margin between images and paragraphs */
+}
+
+.Lendric, .part {
+    order: -1; /* Reverse the order of Lendric image and paragraph */
+}
+
+.vpop, .parq {
+    order: 1; /* Keep the order of vpop image and paragraph */
+}
+
+.folkdance, .pare {
+    order: -1; /* Reverse the order of folkdance image and paragraph */
+}
+
+.parq, .pare, .part {
+    flex: 1; /* Allow paragraphs to grow and take available space */
+    text-align: justify;
+    font-size: 40px;
+    color: rgb(140, 255, 0);
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.waltz {
+    width: 400px;
+    height: 50%;
+    margin-right: 20px; /* Add margin between images and paragraphs */
+}
+
+.vshow {
+    width: 400px;
+    height: 50%;
+    margin-left: 20px; /* Add margin between images and paragraphs */
+}
+
+.waltz, .pz {
+    order: -1; /* Reverse the order of Lendric image and paragraph */
+}
+
+.vshow, .px {
+    order: 1; /* Keep the order of vpop image and paragraph */
+}
+
+.pz, .px {
+    flex: 1; /* Allow paragraphs to grow and take available space */
+    text-align: justify;
+    font-size: 40px;
+    color: rgb(140, 255, 0);
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.py-container,
+.pv-container {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px; /* Add margin between containers */
+}
+
+.py,
+.pv {
+    flex: 1; /* Allow paragraphs to grow and take available space */
+    text-align: justify;
+    font-size: 40px;
+    color: rgb(140, 255, 0);
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.video-container {
+    width: 50%; /* Each video container takes 50% width */
+}
+
+.video-container video {
+    width: 100%; /* Set video width to 100% of container */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add margin between video and paragraph */
+}
+
+
+
